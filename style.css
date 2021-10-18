@@ -304,10 +304,9 @@ span {
     border: 1px solid  var(--dark-cyan);
 }
 
-.bookmark {
+.bookmark-logo {
     transform: translateY(50%);
 }
-
 
 #bookmark {
     position: relative;
@@ -319,12 +318,6 @@ span {
     width: 174px;
     border-radius: 28px;
     background-color: var(--light-gray);
-}
-
-#bookmark svg {
-    position: relative;
-    width: 56px;
-    z-index: 1;
 }
 
 #bookmark circle {
@@ -339,6 +332,9 @@ span {
     justify-content: center;
     align-items: center;
     margin: auto;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 #bookmark:hover {
@@ -370,7 +366,7 @@ span {
 }
 
 
-@media (max-width: 658px) {
+@media (max-width: 772px) {
     #menu-ul {
         display: none;
         width: 100%;
