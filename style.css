@@ -308,25 +308,66 @@ span {
     transform: translateY(50%);
 }
 
-#get-bookmark {
+
+#bookmark {
+    position: relative;
     display: flex;
-    background-color: var(--light-gray);
-    color: var(--text-color);
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    outline: none;
-    border: 1px solid var(--light-gray);
-    width: 174px;
     height: 56px;
-    border-radius: 30px;
+    width: 174px;
+    border-radius: 28px;
+    background-color: var(--light-gray);
+}
+
+#bookmark svg {
+    position: relative;
+    width: 56px;
+    z-index: 1;
+}
+
+#bookmark circle {
+    transition: fill 0.25s ease;
+}
+
+#bookmark p {
+    color: var(--dark-gray);
+    width: 117px;
+    transition: color 0.25s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#bookmark:hover {
     cursor: pointer;
 }
 
-#get-bookmark .book {
-    text-decoration: none;
-    margin-left: 0.5rem;
+#bookmark:hover circle {
+    fill: var(--dark-gray);
 }
 
+#bookmark:hover p {
+    color: var(--dark-gray);
+}
 
+#bookmark.active circle {
+    fill: var(--moderate-cyan);
+}
+
+#bookmark.active p {
+    color: var(--moderate-cyan);
+}
+
+#bookmark.active:hover circle {
+    fill: var(--moderate-cyan);
+}
+
+#bookmark.active:hover p {
+    color: var(--moderate-cyan);
+}
 
 
 @media (max-width: 658px) {
