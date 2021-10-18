@@ -353,11 +353,19 @@ span {
     fill: var(--moderate-cyan);
 }
 
+#bookmark.active path {
+    fill: var(--white);
+}
+
 #bookmark.active p {
     color: var(--moderate-cyan);
 }
 
 #bookmark.active:hover circle {
+    fill: var(--moderate-cyan);
+}
+
+#bookmark.active:hover path {
     fill: var(--moderate-cyan);
 }
 
