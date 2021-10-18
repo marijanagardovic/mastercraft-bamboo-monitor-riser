@@ -138,6 +138,53 @@ section {
     border: 1px solid var(--moderate-cyan);
 }
 
+#discover #file{
+    width: 80%;
+    height: 28px;
+}
+
+#discover {
+    display: flex;
+    height: 212px;
+    margin-top: -4rem;
+}
+
+.progress-part {
+    display: flex;
+    justify-content: space-between;
+    width: 83%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.progress-section {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    width: 100%;
+}
+
+.progress-section h1 {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+}
+
+.progress-section p {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.line {
+    border-right: 3px solid var(--light-gray);
+}
+
 @media (max-width: 658px) {
     #menu-ul {
         display: none;
