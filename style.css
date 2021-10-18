@@ -5,7 +5,8 @@
     --black: hsl(0, 0%, 0%);
     --dark-gray: hsl(0, 0%, 48%);
     --light-gray: hsl(0, 0%, 95%);
-    --text-color: #7A7A7A;
+    --text-color: hsl(0, 0%, 48%);
+    --out-of-stock: #e4e4e4;
     --font-size: 16px;
     --ffamily: 'Commissioner';
     --white: #fff;
@@ -184,6 +185,134 @@ section {
 .line {
     border-right: 3px solid var(--light-gray);
 }
+
+#getstarted {
+    padding: 3em;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: left;
+}
+
+.main-title h3 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.main-title p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    margin-top: 1.8em;
+    margin-bottom: 1rem;
+}
+
+.edition {
+    border: 2px solid var(--light-gray);
+    margin-top: 1.3em;
+    border-radius: 7px;
+    padding: 1em 2em;
+    max-width: 634px;
+    height: 248px;
+}
+
+.edition .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+}
+
+.title .cost {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: var(--moderate-cyan);
+}
+
+.cost .light {
+    color: var(--moderate-cyan);
+}
+
+.edition .desc {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    margin-top: 1em;
+}
+
+.edition .pay {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+}
+
+.pay p {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    color: var(--black);
+}
+
+span {
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 0.5em;
+}
+
+.reward {
+    width: 157px;
+    height: 48px;
+    background-color: var(--moderate-cyan);
+    outline: none;
+    border-radius: 33.5px;
+    border: 1px solid var(--moderate-cyan);
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+}
+    
+.reward:hover {
+    background-color: var(--dark-cyan);
+    border: 1px solid  var(--dark-cyan);
+}
+
+
+
+
+
 
 @media (max-width: 658px) {
     #menu-ul {
