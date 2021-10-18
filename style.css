@@ -3,7 +3,7 @@
     --moderate-cyan: hsl(176, 50%, 47%);
     --dark-cyan: hsl(176, 72%, 28%);
     --black: hsl(0, 0%, 0%);
-    --dark-gray: hsl(0, 0%, 48%);
+    --bookmark-hover: hsl(0, 1%, 54%);
     --light-gray: hsl(0, 0%, 95%);
     --text-color: hsl(0, 0%, 48%);
     --out-of-stock: #e4e4e4;
@@ -325,7 +325,7 @@ span {
 }
 
 #bookmark p {
-    color: var(--dark-gray);
+    color: var(--text-color);
     width: 117px;
     transition: color 0.25s ease;
     display: flex;
@@ -342,11 +342,11 @@ span {
 }
 
 #bookmark:hover circle {
-    fill: var(--dark-gray);
+    fill: var(--text-color);
 }
 
 #bookmark:hover p {
-    color: var(--dark-gray);
+    color: var(--bookmark-hover);
 }
 
 #bookmark.active circle {
