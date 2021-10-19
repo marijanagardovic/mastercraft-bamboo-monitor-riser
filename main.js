@@ -2,6 +2,9 @@ const hamburger = document.querySelector('#hamburger');
 const navUl = document.querySelector('#menu-ul');
 const bookmark = document.querySelector('#bookmark');
 const book =document.querySelector('.book');
+const backThis = document.querySelector('#back-this');
+const modal = document.querySelector('.modal');
+const close = document.querySelector('.close');
 
 // hamburger
 
@@ -19,3 +22,15 @@ bookmark.addEventListener("click", () => {
         book.innerHTML = "Bookmark";
     };
 });
+
+//back this project
+
+backThis.addEventListener('click', () => {
+    modal.classList.add("show-modal");
+})
+
+//close modal button
+
+close.addEventListener('click', () => {
+    modal.classList.remove("show-modal");
+})
