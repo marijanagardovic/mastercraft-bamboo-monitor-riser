@@ -28,11 +28,11 @@ bookmark.addEventListener("click", () => {
 
 backThis.addEventListener('click', () => {
     modal.classList.add("show-modal");
+    getStarted.classList.add("hide-modal");
 })
 
 //close modal button
 
 close.addEventListener('click', () => {
     modal.classList.remove("show-modal");
-    getStarted.classList.add("hide-modal");
 })
