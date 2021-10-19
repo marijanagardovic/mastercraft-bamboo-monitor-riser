@@ -7,6 +7,8 @@
     --light-gray: hsl(0, 0%, 95%);
     --text-color: hsl(0, 0%, 48%);
     --out-of-stock: #e4e4e4;
+    --no-cost: hsl(177, 36%, 70%);
+    --no-desc: hsl(0, 3%, 77%);
     --font-size: 16px;
     --ffamily: 'Commissioner';
     --white: #fff;
@@ -230,7 +232,7 @@ section {
     display: flex;
 }
 
-.title .cost {
+.cost {
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
@@ -244,7 +246,7 @@ section {
     color: var(--moderate-cyan);
 }
 
-.edition .desc {
+.desc {
     font-weight: normal;
     font-size: 16px;
     line-height: 30px;
@@ -260,7 +262,7 @@ section {
     margin-top: 3em;
 }
 
-.pay p {
+.left {
     font-weight: bold;
     font-size: 32px;
     line-height: 39px;
@@ -372,6 +374,33 @@ span {
 #bookmark.active:hover p {
     color: var(--moderate-cyan);
 }
+
+.out-of {
+    color: var(--text-color);
+}
+
+.title .no-cost {
+    color: var(--no-cost)
+}
+
+.desc .hide-out {
+    color: var(--no-desc);
+}
+
+.pay .zero {
+    color: var(--text-color);
+}
+
+.pay .no-reward {
+    background-color: var(--bookmark-hover);
+    border: 1px solid var(--bookmark-hover);
+}
+
+.pay .no-reward:hover {
+    cursor:not-allowed;
+}
+
+/* MODAL */
 
 
 @media (max-width: 772px) {
