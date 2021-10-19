@@ -401,7 +401,161 @@ span {
 }
 
 /* MODAL */
+.modal-content {
+    max-width: 730px;
+    margin: auto;
+    background-color: var(--white);
+    border-radius: 7px;
+    padding: 2rem 3rem;
+    position: relative;
+    margin-top: 2em;
+}
 
+.types {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2em;
+}
+
+.type {
+    border: 2px solid var(--light-gray);
+    border-radius: 7px;
+    padding: 1rem 2rem;
+}
+
+.types .type .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .left-modal {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header .title-modal {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin-right: 0.5em;
+}
+
+.header .cost {
+    display: flex;
+    align-items: left;
+    width: 100%;
+}
+
+.pledge {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.5rem;
+    border-top: 2px solid var(--light-gray);
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.pledge p {
+    font-size: 15px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}
+
+form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1em;
+}
+
+.close {
+    display: flex;
+    position: absolute;
+    right: 2rem;
+}
+
+.close:hover path{
+    cursor: pointer;
+    fill: var(--black);
+}
+
+.title-modal {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+}
+
+.header .zero {
+    color: var(--text-color);
+}
+
+input[type=number] {
+    outline: none;
+    border: 1px solid var(--dark-cyan);
+    padding: 1em;
+    width: 100px;
+    height: 48px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--black);
+}
+
+label {
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 5px;
+    color: var(--text-color);
+}
+
+input[type=submit] {
+    outline: none;
+    width: 107px;
+    height: 48px;
+    border-radius: 30px;
+    background-color: var(--dark-cyan);
+    border: 1px solid var(--dark-cyan);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--white);
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+}
+
+.input-price .no-continue {
+    background-color: var(--text-color);
+    border: 1px solid var(--text-color);
+    cursor: not-allowed;
+}
+
+.input-price .out-of-pledge {
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+}
+
+.header .no-cost {
+    color: var(--no-cost);
+}
+
+input[type=radio] {
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 14px;
+}
+
+.header .no-reward {
+    margin-top: 7px;
+}
 
 @media (max-width: 772px) {
     #menu-ul {
