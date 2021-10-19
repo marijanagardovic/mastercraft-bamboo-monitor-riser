@@ -568,6 +568,7 @@ input[type=radio] {
     background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     height: 100%;
+    padding-top: 8%;
 }
 
 @media (max-width: 772px) {
