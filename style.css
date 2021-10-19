@@ -183,7 +183,7 @@ section {
     border-right: 3px solid var(--light-gray);
 }
 
-#getstarted {
+.getstarted {
     padding: 3em;
     margin-top: 2rem;
     display: flex;

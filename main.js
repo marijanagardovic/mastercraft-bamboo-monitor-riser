@@ -5,7 +5,7 @@ const book =document.querySelector('.book');
 const backThis = document.querySelector('#back-this');
 const modal = document.querySelector('.modal');
 const close = document.querySelector('.close');
-const getStarted = document.querySelector('#getstarted');
+const getStarted = document.querySelector('.getstarted');
 
 // hamburger
 
