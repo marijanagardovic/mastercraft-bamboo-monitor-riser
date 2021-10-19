@@ -5,6 +5,7 @@ const book =document.querySelector('.book');
 const backThis = document.querySelector('#back-this');
 const modal = document.querySelector('.modal');
 const close = document.querySelector('.close');
+const getStarted = document.querySelector('#get-started');
 
 // hamburger
 
@@ -33,4 +34,5 @@ backThis.addEventListener('click', () => {
 
 close.addEventListener('click', () => {
     modal.classList.remove("show-modal");
+    getStarted.classList.add("hide-modal");
 })

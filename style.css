@@ -571,6 +571,10 @@ input[type=radio] {
     padding-top: 8%;
 }
 
+.hide-modal {
+    display: none;
+}
+
 @media (max-width: 772px) {
     #menu-ul {
         display: none;
