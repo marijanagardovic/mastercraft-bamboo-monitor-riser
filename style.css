@@ -458,6 +458,10 @@ span {
     margin-bottom: 1em;
 }
 
+.pledge {
+    display: none;
+}
+
 .pledge p {
     font-size: 15px;
     line-height: 28px;
@@ -567,7 +571,7 @@ input[type=radio] {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     top: 0;
-    height: 100%;
+    height: 200%;
     padding-top: 8%;
 }
 
