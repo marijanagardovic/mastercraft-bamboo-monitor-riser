@@ -77,9 +77,9 @@ types.forEach((item) => {
             item.style.border = "2px solid var(--light-gray)";
         });
 
-        for( item = 0; i < types.length; item++){
+        for( item = 0; item < types.length; item++){
         if(types[item]) {
-            item[item].style.border = "2px solid hsl(176, 50%, 47%)";
+            types[item].style.border = "2px solid hsl(176, 50%, 47%)";
             for(var i=0; i < pledges.length; i++){   
                 pledges[i].classList.add("show-pledge"); 
             }
