@@ -17,6 +17,7 @@ const pledgeTwo = document.querySelector('#pledge-two');
 const types = document.querySelectorAll('.type');
 const pledges = document.querySelectorAll('.pledge');
 
+
 // hamburger
 
 hamburger.addEventListener('click', () => {
@@ -76,7 +77,6 @@ types.forEach((item) => {
         types.forEach((item) => {
             item.style.border = "2px solid var(--light-gray)";
         });
-
         for( item = 0; item < types.length; item++){
         if(types[item]) {
             types[item].style.border = "2px solid hsl(176, 50%, 47%)"; 
