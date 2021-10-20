@@ -85,6 +85,15 @@ types.forEach((item) => {
     })
 })
 
+//function for buttons on main page
+
+const rewards = document.querySelectorAll(".reward");
+rewards.forEach (reward => {
+    reward.addEventListener("click", () =>{
+        modal.classList.add("show-modal");
+        getStarted.classList.add("hide-get-started");
+    })
+})
 
 
 

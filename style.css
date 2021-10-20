@@ -455,6 +455,11 @@ span {
     color: var(--moderate-cyan);
 }
 
+.title-modal:active {
+    color: var(--moderate-cyan);
+}
+
+
 .header .cost {
     display: flex;
     align-items: left;
@@ -506,6 +511,7 @@ form {
     line-height: 22px;
     display: flex;
 }
+
 
 .header .zero {
     color: var(--text-color);
