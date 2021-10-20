@@ -220,7 +220,6 @@ section {
     border-radius: 7px;
     padding: 1em 2em;
     max-width: 634px;
-    height: 248px;
 }
 
 .edition .title {
@@ -372,7 +371,7 @@ span {
 }
 
 #bookmark.active:hover path {
-    fill: var(--moderate-cyan);
+    fill: var(--white);
 }
 
 #bookmark.active:hover p {
@@ -678,5 +677,60 @@ input[type=radio] {
 
     .mobile-nav {
         display: block;
+    }
+
+    #bookmark {
+        width: 57px;
+    }
+
+    #bookmark p {
+        display: none;
+    }
+
+    section {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    section {
+        width: 90%;
+    }
+
+    .progress-part {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .progress-section {
+        align-items: center;
+        justify-content: center;
+    }
+
+    #discover {
+        height: 490px;
+    }
+
+    .line {
+        border-bottom: 3px solid var(--light-gray);
+        border-right: none;
+    }
+
+    .title {
+        flex-direction: column;
+    }
+
+    .pay {
+        flex-direction: column;
+    }
+
+    .pay .reward {
+        margin-top: 1em;
+    }
+
+    #about {
+        height: 350px;
     }
 }
