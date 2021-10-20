@@ -74,14 +74,17 @@ gotIt.addEventListener('click', () =>{
 types.forEach((item) => {
     item.addEventListener("click", () =>{
         types.forEach((item) => {
-            item.style.border = "1px solid var(--light-gray)";
+            item.style.border = "2px solid var(--light-gray)";
         });
-        if(item.childNodes[1].childElementCount <= 4) {
-            item.style.border = "2px solid hsl(176, 50%, 47%)";
+
+        for( item = 0; i < types.length; item++){
+        if(types[item]) {
+            item[item].style.border = "2px solid hsl(176, 50%, 47%)";
             for(var i=0; i < pledges.length; i++){   
                 pledges[i].classList.add("show-pledge"); 
             }
         }
+    }
     })
 })
 
