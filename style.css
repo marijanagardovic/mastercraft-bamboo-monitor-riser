@@ -401,7 +401,7 @@ span {
 }
 
 .pay .no-reward:hover {
-    cursor:not-allowed;
+    cursor: not-allowed;
 }
 
 /* MODAL */
@@ -445,6 +445,11 @@ span {
     align-items: center;
     width: 80%;
     margin-right: 0.5em;
+}
+
+.title-modal:hover {
+    cursor: pointer;
+    color: var(--moderate-cyan);
 }
 
 .header .cost {
@@ -581,6 +586,83 @@ input[type=radio] {
 
 .hide-get-started {
     display: none;
+}
+
+.thanks-msg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto; 
+    width: 540px;
+}
+
+.thanks-msg {
+    display: none;
+}
+
+.show-message {
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    height: 300%;
+    padding-top: 8%;
+    margin: auto;
+    width: 100%;
+    padding-left: 31rem;
+    padding-right: 31rem;
+}
+
+.msg-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 2em;
+    background-color: var(--white);
+    border: 1px solid rgba(0, 0, 0, 0.0497193);
+    border-radius: 8px;
+}
+
+.thanks-msg img {
+    width: 90px;
+    height: 90px;
+}
+
+.thanks-msg h3 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 1.5em;
+    margin-top: 2.5em;
+}
+
+.thanks-msg p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#got-it {
+    width: 107px;
+    height: 48px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--white);
+    background-color: var(--dark-cyan);
+    border: 1px solid var(--dark-cyan);
+    outline: none;
+    border-radius: 30px;
+    margin-bottom: 2rem;
+}
+
+#got-it:hover {
+    cursor: pointer;
 }
 
 @media (max-width: 772px) {
