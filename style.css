@@ -693,6 +693,19 @@ input[type=radio] {
     #menu-ul.show {
         display: flex;
         flex-direction: column;
+        background-color: var(--white);
+        max-width: 327px;
+        border-radius: 7px;
+        position: absolute;
+        padding: 0;
+    }
+
+    #menu-ul.show li a{
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
     }
 
     .mobile-nav {
