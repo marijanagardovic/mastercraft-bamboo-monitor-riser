@@ -6,6 +6,9 @@ const backThis = document.querySelector('#back-this');
 const modal = document.querySelector('.modal');
 const close = document.querySelector('.close');
 const getStarted = document.querySelector('.getstarted');
+const support = document.querySelector('#support');
+const message = document.querySelector('.thanks-msg');
+const gotIt = document.querySelector('#got-it');
 
 // hamburger
 
@@ -35,5 +38,20 @@ backThis.addEventListener('click', () => {
 
 close.addEventListener('click', () => {
     modal.classList.remove("show-modal");
+    getStarted.classList.remove("hide-get-started");
+})
+
+//support radio button
+
+support.addEventListener('click', () => {
+    modal.classList.remove("show-modal");
+    message.classList.add("show-message");
+    getStarted.classList.remove("hide-get-started");
+})
+
+//got it button
+
+gotIt.addEventListener('click', () =>{
+    message.classList.remove("show-message");
     getStarted.classList.remove("hide-get-started");
 })
