@@ -15,6 +15,7 @@ const typeThree = document.querySelector('#type-3');
 const pledgeOne = document.querySelector('#pledge-one');
 const pledgeTwo = document.querySelector('#pledge-two');
 const types = document.querySelectorAll('.type');
+const pledges = document.querySelectorAll('.pledge');
 
 // hamburger
 
@@ -77,9 +78,14 @@ types.forEach((item) => {
         });
         if(item.childNodes[1].childElementCount <= 4) {
             item.style.border = "2px solid hsl(176, 50%, 47%)";
-            item.pledge.classList.add("show-pledge");
+            for(var i=0; i < pledges.length; i++){   
+                pledges[i].classList.add("show-pledge"); 
+            }
         }
     })
 })
+
+
+
 
 
