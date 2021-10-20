@@ -9,6 +9,13 @@ const getStarted = document.querySelector('.getstarted');
 const support = document.querySelector('#support');
 const message = document.querySelector('.thanks-msg');
 const gotIt = document.querySelector('#got-it');
+const typeOne = document.querySelector('#type-1');
+const typeTwo = document.querySelector('#type-2');
+const typeThree = document.querySelector('#type-3');
+const pledgeOne = document.querySelector('#pledge-one');
+const types = document.querySelectorAll('.type');
+const titleModal = document.querySelector('.title-modal');
+
 
 // hamburger
 
@@ -44,9 +51,14 @@ close.addEventListener('click', () => {
 //support radio button
 
 support.addEventListener('click', () => {
-    modal.classList.remove("show-modal");
     message.classList.add("show-message");
     getStarted.classList.remove("hide-get-started");
+})
+
+//pledges title
+
+pledgeOne.addEventListener('click', () => {
+    message.classList.add("show-message");
 })
 
 //got it button
@@ -54,4 +66,18 @@ support.addEventListener('click', () => {
 gotIt.addEventListener('click', () =>{
     message.classList.remove("show-message");
     getStarted.classList.remove("hide-get-started");
+    modal.classList.remove("show-modal");
+})
+
+//border cyan when it's active
+
+types.forEach((item) => {
+    item.addEventListener("click", () =>{
+        types.forEach((item) => {
+            item.style.border = "1px solid var(--light-gray)";
+        });
+        if(item.childNodes[1].childElementCount <= 4) {
+            item.style.border = "2px solid hsl(176, 50%, 47%)";
+        }
+    })
 })
