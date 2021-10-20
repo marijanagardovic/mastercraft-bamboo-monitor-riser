@@ -579,7 +579,7 @@ input[type=radio] {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     top: 0;
-    height: 200%;
+    height: 300%;
     padding-top: 8%;
 }
 
@@ -664,6 +664,14 @@ input[type=radio] {
     cursor: pointer;
 }
 
+@media (min-width: 773px) and (max-width: 1280px) {
+    
+    .show-message {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+}
+
 @media (max-width: 772px) {
     #menu-ul {
         display: none;
@@ -689,6 +697,11 @@ input[type=radio] {
 
     section {
         width: 80%;
+    }
+
+    .show-message {
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
 }
 
@@ -732,5 +745,42 @@ input[type=radio] {
 
     #about {
         height: 350px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    .modal-content .header {
+        flex-direction: column;
+    }
+
+    .header .cost {
+        margin-left: 1em;
+        margin-top: 0.5em;
+    }
+
+    .show-message {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .msg-content h3 {
+        font-size: 20px;
+    }
+
+    .msg-content p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 376px) {
+
+    .msg-content h3 {
+        font-size: 17px;
+    }
+
+    .msg-content p {
+        font-size: 10px;
     }
 }
