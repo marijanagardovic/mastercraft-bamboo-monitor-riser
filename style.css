@@ -380,6 +380,7 @@ span {
 
 .out-of {
     color: var(--text-color);
+    cursor: not-allowed;
 }
 
 .title .no-cost {
@@ -436,7 +437,9 @@ span {
 .header .left-modal {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 .header .title-modal {
@@ -444,6 +447,7 @@ span {
     align-items: center;
     width: 80%;
     margin-right: 0.5em;
+    margin-top: 0.4em;
 }
 
 .title-modal:hover {
@@ -505,6 +509,8 @@ form {
 
 .header .zero {
     color: var(--text-color);
+    font-size: 18px;
+    line-height: 22px;
 }
 
 input[type=number] {

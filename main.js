@@ -13,9 +13,8 @@ const typeOne = document.querySelector('#type-1');
 const typeTwo = document.querySelector('#type-2');
 const typeThree = document.querySelector('#type-3');
 const pledgeOne = document.querySelector('#pledge-one');
+const pledgeTwo = document.querySelector('#pledge-two');
 const types = document.querySelectorAll('.type');
-const titleModal = document.querySelector('.title-modal');
-
 
 // hamburger
 
@@ -69,7 +68,7 @@ gotIt.addEventListener('click', () =>{
     modal.classList.remove("show-modal");
 })
 
-//border cyan when it's active
+//border cyan ---------- when it's active
 
 types.forEach((item) => {
     item.addEventListener("click", () =>{
@@ -78,6 +77,9 @@ types.forEach((item) => {
         });
         if(item.childNodes[1].childElementCount <= 4) {
             item.style.border = "2px solid hsl(176, 50%, 47%)";
+            item.pledge.classList.add("show-pledge");
         }
     })
 })
+
+
